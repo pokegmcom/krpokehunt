@@ -1,11 +1,11 @@
-/* 基础样式重置 */
+/* 기본 스타일 초기화 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 颜色变量定义 */
+/* 색상 변수 정의 */
 :root {
     --primary-color: #3b82f6;
     --primary-dark: #2563eb;
@@ -18,7 +18,7 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* 基础排版 */
+/* 기본 레이아웃 */
 body {
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
@@ -32,7 +32,7 @@ body {
     padding: 0 20px;
 }
 
-/* 导航栏样式 */
+/* 네비게이션 바 스타일 */
 .navbar {
     background-color: var(--white-color);
     box-shadow: var(--shadow);
@@ -102,7 +102,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* 英雄区域（轮播图） */
+/* 영웅 영역 (슬라이드쇼) */
 .hero {
     margin-top: 70px;
     position: relative;
@@ -159,7 +159,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* 按钮样式 */
+/* 버튼 스타일 */
 .btn {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -183,7 +183,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* 轮播控制按钮 */
+/* 슬라이드 제어 버튼 */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -209,7 +209,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* 轮播指示器 */
+/* 슬라이드 인디케이터 */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -228,7 +228,7 @@ body {
     background-color: var(--primary-color);
 }
 
-/* 淡入动画 */
+/* 페이드 인 애니메이션 */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -239,7 +239,7 @@ body {
     to {opacity: 1}
 }
 
-/* 章节标题 */
+/* 섹션 제목 */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -249,7 +249,7 @@ body {
     padding-top: 2rem;
 }
 
-/* 游戏介绍区域 */
+/* 게임 소개 영역 */
 .about {
     padding: 8rem 0;
     background-color: var(--white-color);
@@ -298,42 +298,54 @@ body {
     font-size: 0.95rem;
 }
 
-/* 游戏画廊区域 */
-.gallery {
-    padding: 8rem 0;
-    background-color: var(--light-color);
+/* 수직 특색 이미지 표시 */
+.about-vertical-images {
+    margin-top: 4rem;
+    overflow-x: auto;
+    padding: 1rem 0;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+.about-vertical-images::-webkit-scrollbar {
+    height: 8px;
 }
 
-.gallery-item {
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.about-vertical-images::-webkit-scrollbar-track {
+    background: var(--gray-color);
+    border-radius: 4px;
 }
 
-.gallery-item:hover {
-    transform: translateY(-5px);
+.about-vertical-images::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.about-vertical-images::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+.vertical-image {
+    height: 400px;
+    width: auto;
+    margin-right: 1rem;
+    border-radius: 8px;
     box-shadow: var(--shadow-lg);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
+.vertical-image:hover {
+    transform: scale(1.05);
 }
 
-/* 游戏攻略区域 */
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .vertical-image {
+        height: 300px;
+    }
+}
+
+
+
+/* 게임 가이드 영역 */
 .guide {
     padding: 8rem 0;
     background-color: var(--white-color);
@@ -383,7 +395,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* 联系信息区域 */
+/* 연락 정보 영역 */
 .contact {
     padding: 8rem 0;
     background-color: var(--primary-color);
@@ -418,7 +430,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* 页脚样式 */
+/* 푸터 스타일 */
 .footer {
     background-color: var(--dark-color);
     color: var(--white-color);
@@ -474,7 +486,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* 响应式设计 */
+/* 반응형 디자인 */
 @media (max-width: 1024px) {
     .about-content,
     .guide-content {
