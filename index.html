@@ -31,6 +31,22 @@
                 <li><a href="#download">게임 다운로드</a></li>
                 <li><a href="#contact">연락처</a></li>
             </ul>
+            <div class="language-selector">
+                <button onclick="toggleLanguageDropdown()">
+                    <span>한국어</span>
+                    <span>▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://game.pokegm.com">简体中文</a>
+                    <a href="https://taiwan.pokegm.com">繁體中文(台灣)</a>
+                    <a href="https://hongkong.pokegm.com">繁體中文(香港)</a>
+                    <a href="https://macau.pokegm.com">繁體中文(澳門)</a>
+                    <a href="https://korea.pokegm.com">한국어</a>
+                    <a href="https://singapore.pokegm.com">English</a>
+                    <a href="https://malaysia.pokegm.com">Malay</a>
+                    <a href="https://vietnam.pokegm.com">Tiếng Việt</a>
+                </div>
+            </div>
             <button class="navbar-toggle">
                 <span></span>
                 <span></span>
@@ -44,15 +60,15 @@
         <div class="slideshow-container">
             <div class="slide fade">
                 <div class="slide-content">
-                        <h2>포케헌트 - 복고 픽셀몬스터 수집육성 게임!</h2>
-                        <p>전통적인몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 복고 픽셀 화풍으로 돌아오는 기억 속의 매력!</p>
-                        <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary">게임 다운로드하기</a>
-                    </div>
+                    <h2>포케헌트 - 복고 픽셀몬스터 수집육성 게임!</h2>
+                    <p>전통적인 몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 복고 픽셀 화풍으로 돌아오는 기억 속의 매력!</p>
+                    <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary">게임 다운로드하기</a>
+                </div>
             </div>
             <div class="slide fade">
                 <div class="slide-content">
-                    <h2>오픈 월드에서의 탐험과몬스터 수집!</h2>
-                    <p>넓은 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한몬스터를 포획하세요!</p>
+                    <h2>오픈 월드에서의 탐험과 몬스터 수집!</h2>
+                    <p>넓은 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한 몬스터를 포획하세요!</p>
                     <a href="https://new.yinyouwl.com/y92.0l108/rxKmUldO6YzewvoRw_1_PA/YBrw.html" class="btn btn-primary">게임 다운로드하기</a>
                 </div>
             </div>
@@ -72,7 +88,6 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-</div>
         </div>
     </section>
 
@@ -212,38 +227,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo.png" alt="포케헌트 로고" class="logo">
-                    <h3>포케헌트</h3>
-                </div>
-                <div class="footer-links">
-                <a href="#home">홈</a>
-                <a href="#about">게임 소개</a>
-                <a href="#guide">게임 가이드</a>
-                <a href="#download">게임 다운로드</a>
-                <a href="#contact">연락처</a>
-            </div>
-                <div class="language-switcher">
-                    <span>언어 전환: </span>
-                    <a href="https://game.pokegm.com">简体中文</a> | 
-                    <a href="https://taiwan.pokegm.com">繁體中文(台灣)</a> | 
-                    <a href="https://hongkong.pokegm.com">繁體中文(香港)</a> | 
-                    <a href="https://macau.pokegm.com">繁體中文(澳門)</a> | 
-                    <a href="https://korea.pokegm.com">한국어</a> | 
-                    <a href="https://singapore.pokegm.com">English</a> | 
-                    <a href="https://malaysia.pokegm.com">Malay</a> | 
-                    <a href="https://vietnam.pokegm.com">Tiếng Việt</a>
-                </div>
                 <div class="friend-links">
                     <span>친구 링크: </span>
-                    <a href="https://pokegm.com">포케헌트 공식 커뮤니티</a> | 
-                    <a href="https://pokegm.com/news">게임 소식</a> | 
-                    <a href="https://pokegm.com/download">게임 다운로드</a>
+                    <a href="https://game.pokegm.com">精灵物语</a>
+                    <a href="https://taiwan.pokegm.com">精靈物語</a>
+                    <a href="https://hongkong.pokegm.com">精靈物語</a>
+                    <a href="https://macau.pokegm.com">精靈物語</a>
+                    <a href="https://korea.pokegm.com">포케헌트</a>
+                    <a href="https://singapore.pokegm.com">PokeHunt</a>
+                    <a href="https://malaysia.pokegm.com">PokeHunt</a>
+                    <a href="https://vietnam.pokegm.com">PokeHunt</a>
                 </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2026 Pokehunt. All rights reserved.</p>
-                    <p><a href="mailto:game@pokegm.com" class="contact-email">game@pokegm.com</a></p>
-                </div>
+                <p>&copy; 2026 Pokehunt. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -324,6 +319,18 @@
 
         navbarToggle.addEventListener('click', () => {
             navbarMenu.classList.toggle('active');
+        });
+
+        // 언어 선택기 드롭다운 기능
+        function toggleLanguageDropdown() {
+            document.querySelector('.language-selector').classList.toggle('active');
+        }
+
+        // 외부 클릭 시 드롭다운 메뉴 닫기
+        window.addEventListener('click', function(event) {
+            if (!event.target.closest('.language-selector')) {
+                document.querySelector('.language-selector').classList.remove('active');
+            }
         });
     </script>
 </body>
