@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 특색 - 포케헌트 PokeHunt</title>
+    <meta name="description" content="포케헌트(PokeHunt)의 게임 특색을 소개합니다. 복고 픽셀 화풍, 수백 종의 몬스터, 턴제 전략 전투, 오픈 월드 탐험 등 다양한 게임 요소를 확인하세요!">
+    <meta name="keywords" content="포케헌트, PokeHunt, 게임 특색, 복고 픽셀, 몬스터 수집, 턴제 전투, 오픈 월드, 게임 특징">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="게임 특색 - 포케헌트">
+    <meta property="og:description" content="포케헌트(PokeHunt)의 게임 특색을 소개합니다. 복고 픽셀 화풍, 수백 종의 몬스터, 턴제 전략 전투, 오픈 월드 탐험 등 다양한 게임 요소를 확인하세요!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://korea.pokegm.com/features.html">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-light text-dark">
+    <!-- 네비게이션 바 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                    <h1 class="text-2xl font-bold text-primary">포케헌트</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium">홈</a>
+                    <a href="features.html" class="text-primary font-medium">게임 특색</a>
+                    <a href="guide.html" class="text-gray-700 hover:text-primary font-medium">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium">환전 코드</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary font-medium">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium btn-hover">게임 다운로드</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="navbar-toggle text-gray-700">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="navbar-menu hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium py-2">홈</a>
+                    <a href="features.html" class="text-primary font-medium py-2">게임 특색</a>
+                    <a href="guide.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium py-2">환전 코드</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium text-center btn-hover">게임 다운로드</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 영역 -->
+    <section class="hero-bg h-[60vh] flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">게임 특색</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">포케헌트의 독특한 게임 요소와 특징을 알아보세요</p>
+        </div>
+    </section>
+
+    <!-- 게임 특색 섹션 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 특색 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paint-brush text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">복고 픽셀 화풍</h3>
+                    <p class="text-gray-600">어릴 적의 추억을 불러오는 복고 스타일의 그래픽으로, 전통적인 몬스터 게임의 매력을 재현합니다. 픽셀 아트로 만들어진 세상에서 모험을 즐겨보세요!</p>
+                </div>
+                
+                <!-- 특색 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paw text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">수백 종의 몬스터</h3>
+                    <p class="text-gray-600">다양한 타입의 독특한 몬스터를 포획하고 수집하여, 전용 전투 팀을 구성하세요. 각 몬스터는 고유한 능력과 스킬을 가지고 있습니다.</p>
+                </div>
+                
+                <!-- 특색 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gamepad text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">턴제 전략 전투</h3>
+                    <p class="text-gray-600">전략적으로 팀을 구성하고, 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치세요. 타입 상성과 스킬 조합으로 승리를 쟁취하세요!</p>
+                </div>
+                
+                <!-- 특색 4 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-map-o text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">오픈 월드 탐험</h3>
+                    <p class="text-gray-600">넓은 오픈 월드에서 미지의 영역을 탐험하고, 숨겨진 몬스터를 찾아보세요. 다양한 환경과 지역에서 새로운 모험을 경험하세요!</p>
+                </div>
+                
+                <!-- 특색 5 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">다중 플레이어 대전</h3>
+                    <p class="text-gray-600">다른 트레이너들과 실시간으로 대전하여, 최고의 트레이너가 되어보세요. 리그 시스템을 통해 순위를 올려가며 챌린지를 받으세요!</p>
+                </div>
+                
+                <!-- 특색 6 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gift text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">다양한 보상 시스템</h3>
+                    <p class="text-gray-600">일일 미션, 주간 이벤트, 특별 이벤트 등을 통해 다양한 보상을 획득하세요. 게임을 즐기면서 지속적으로 보상을 받을 수 있습니다!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 게임 이미지 갤러리 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">게임 이미지 갤러리</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="1.jpg" alt="게임 이미지 1" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="2.jpg" alt="게임 이미지 2" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="3.jpg" alt="게임 이미지 3" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="4.jpg" alt="게임 이미지 4" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="5.jpg" alt="게임 이미지 5" class="w-full h-64 object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="1.jpg" alt="게임 이미지 6" class="w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다운로드 섹션 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">지금 게임을 다운로드하세요!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">포케헌트의 세계로 들어가서, 복고 픽셀 몬스터 수집육성 게임의 재미를 경험하세요!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-white text-primary px-8 py-3 rounded-lg font-bold text-lg btn-hover">게임 다운로드하기</a>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                        <h3 class="text-2xl font-bold">포케헌트</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">복고 픽셀 몬스터 수집육성 게임으로, 전통적인 몬스터 게임의 매력을 재현한 턴제 RPG 게임입니다.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white"><i class="fa fa-discord text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">빠른 링크</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">홈</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">게임 특색</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-white">게임 가이드</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">환전 코드</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">게임 소식</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">연락처</h3>
+                    <p class="text-gray-400 mb-2">QQ群: 1054734634</p>
+                    <div class="mt-4">
+                        <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二维码" class="w-32 h-32">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Pokehunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // 모바일 메뉴 토글
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

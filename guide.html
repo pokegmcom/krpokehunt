@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 가이드 - 포케헌트 PokeHunt</title>
+    <meta name="description" content="포케헌트(PokeHunt) 게임 가이드입니다. 초보자 가이드, 고급 전략, 몬스터 획득 방법, 도련장攻略 등 다양한 게임 팁을 확인하세요!">
+    <meta name="keywords" content="포케헌트, PokeHunt, 게임 가이드, 초보자 가이드, 고급 전략, 몬스터 획득, 도련장攻略, 게임 팁">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="게임 가이드 - 포케헌트">
+    <meta property="og:description" content="포케헌트(PokeHunt) 게임 가이드입니다. 초보자 가이드, 고급 전략, 몬스터 획득 방법, 도련장攻略 등 다양한 게임 팁을 확인하세요!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://korea.pokegm.com/guide.html">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-light text-dark">
+    <!-- 네비게이션 바 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                    <h1 class="text-2xl font-bold text-primary">포케헌트</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium">홈</a>
+                    <a href="features.html" class="text-gray-700 hover:text-primary font-medium">게임 특색</a>
+                    <a href="guide.html" class="text-primary font-medium">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium">환전 코드</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary font-medium">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium btn-hover">게임 다운로드</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="navbar-toggle text-gray-700">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="navbar-menu hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium py-2">홈</a>
+                    <a href="features.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 특색</a>
+                    <a href="guide.html" class="text-primary font-medium py-2">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium py-2">환전 코드</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium text-center btn-hover">게임 다운로드</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 영역 -->
+    <section class="hero-bg h-[60vh] flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">게임 가이드</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">포케헌트의 게임 방법과 전략을 알아보세요</p>
+        </div>
+    </section>
+
+    <!-- 초보자 가이드 섹션 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">초보자 가이드</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 단계 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">게임 다운로드 및 설치</h3>
+                    <p class="text-gray-600 mb-4">게임을 다운로드하고 설치한 후, 첫 실행 시 튜토리얼을 따라 진행하세요. 튜토리얼을 통해 게임의 기본操作과 시스템을 익힐 수 있습니다.</p>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="text-primary font-medium hover:underline flex items-center">
+                        다운로드하러 가기 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- 단계 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl font-bold text-secondary">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">첫 몬스터 선택</h3>
+                    <p class="text-gray-600 mb-4">게임 시작 시, 세 가지 타입의 몬스터 중 하나를 선택할 수 있습니다. 각 타입은 다른 특징을 가지고 있으므로, 자신의 플레이 스타일에 맞는 몬스터를 선택하세요.</p>
+                    <ul class="text-gray-600 space-y-2 mb-4">
+                        <li><i class="fa fa-fire text-red-500 mr-2"></i> 불 타입: 공격력이 강력</li>
+                        <li><i class="fa fa-tint text-blue-500 mr-2"></i> 물 타입: 방어력이 우수</li>
+                        <li><i class="fa fa-leaf text-green-500 mr-2"></i> 풀 타입: 스킬 다양성</li>
+                    </ul>
+                </div>
+                
+                <!-- 단계 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <span class="text-2xl font-bold text-accent">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">탐험과 몬스터 포획</h3>
+                    <p class="text-gray-600 mb-4">오픈 월드에서 탐험을 시작하고, 다양한 지역에서 몬스터를 찾으세요. 화면에 나타나는 몬스터를 터치하여 포획하세요. 포획 성공률을 높이기 위해서는 몬스터의 체력을 줄이고 적절한 포켓볼을 사용하세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고급 전략 섹션 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">고급 전략</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 전략 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <h3 class="text-2xl font-bold mb-4">타입 상성 활용</h3>
+                    <p class="text-gray-600 mb-4">각 몬스터는 다른 타입에 대해 강점과 약점이 있습니다. 예를 들어, 물 타입은 불 타입에 강하고, 불 타입은 풀 타입에 강합니다. 턴제 전투에서 상성을 적절히 활용하여 승리하세요.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">주요 타입 상성:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li>불 > 풀, 얼음</li>
+                            <li>물 > 불, 땅, 돌</li>
+                            <li>풀 > 물, 땅, 돌</li>
+                            <li>전기 > 물, 비행</li>
+                            <li>얼음 > 물, 땅, 비행, 드래곤</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 전략 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <h3 class="text-2xl font-bold mb-4">팀 구성 전략</h3>
+                    <p class="text-gray-600 mb-4">다양한 타입의 몬스터로 전용 팀을 구성하세요. 도련장 리더와 레전드 트레이너와의 대결에 적합한 팀을 준비하세요. 일반적으로, 3-4종류의 타입을 포함한 팀이 좋습니다.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">팀 구성 팁:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li>주력 공격 몬스터 2-3마리</li>
+                            <li>방어형 몬스터 1-2마리</li>
+                            <li>회복 스킬을 가진 몬스터 1마리</li>
+                            <li>상대 타입에 대응할 수 있는 몬스터 포함</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 전략 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <h3 class="text-2xl font-bold mb-4">몬스터 강화</h3>
+                    <p class="text-gray-600 mb-4">포획한 몬스터를 강화시켜 더욱 강력하게 만들 수 있습니다. 경험치를 쌓아 레벨업시키고, 진화시켜 새로운 능력을 얻으세요. 또한, 장비를 장착시켜 스탯을 향상시킬 수 있습니다.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">강화 방법:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li>전투를 통해 경험치 획득</li>
+                            <li>사료 아이템 사용</li>
+                            <li>진화 스톤을 사용한 진화</li>
+                            <li>장비 장착</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 전략 4 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <h3 class="text-2xl font-bold mb-4">도련장攻略</h3>
+                    <p class="text-gray-600 mb-4">도련장은 게임의 중요한 콘텐츠입니다. 각 도련장은 다른 타입의 몬스터로 구성되어 있으며, 도련장 리더를 이기면 배지를 획득할 수 있습니다. 8개의 도련장을 모두 클리어해야 최종 챌린지에 도전할 수 있습니다.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">도련장攻略 팁:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li>도련장 타입에 맞는 몬스터로 팀 구성</li>
+                            <li>레벨과 장비를 충분히 준비</li>
+                            <li>리더의 패턴을 파악</li>
+                            <li>스킬 쿨타임을 적절히 관리</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 자주 묻는 질문 섹션 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">자주 묻는 질문</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- 질문 1 -->
+                    <div class="bg-white rounded-2xl shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">몬스터를 어떻게 포획하나요?</h3>
+                        <p class="text-gray-600">오픈 월드에서 몬스터를 발견하면 터치하여 전투를 시작하세요. 몬스터의 체력을 줄인 후, 포켓볼을 사용하여 포획할 수 있습니다. 몬스터의 체력이 낮을수록 포획 성공률이 높아집니다.</p>
+                    </div>
+                    
+                    <!-- 질문 2 -->
+                    <div class="bg-white rounded-2xl shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">몬스터를 진화시키는 방법은 무엇인가요?</h3>
+                        <p class="text-gray-600">몬스터가 일정 레벨에 도달하면 자동으로 진화하거나, 진화 스톤을 사용하여 진화시킬 수 있습니다. 진화하면 몬스터의 능력치가大幅 상승하고, 새로운 스킬을 얻을 수 있습니다.</p>
+                    </div>
+                    
+                    <!-- 질문 3 -->
+                    <div class="bg-white rounded-2xl shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">도련장을 클리어하면 어떤 보상을 받나요?</h3>
+                        <p class="text-gray-600">도련장을 클리어하면 배지를 획득할 수 있으며, 다양한 아이템과 경험치를 얻을 수 있습니다. 8개의 도련장을 모두 클리어하면 최종 챌린지에 도전할 수 있으며, 특별한 보상을 받을 수 있습니다.</p>
+                    </div>
+                    
+                    <!-- 질문 4 -->
+                    <div class="bg-white rounded-2xl shadow-md p-6">
+                        <h3 class="text-xl font-bold mb-2">다른 플레이어와 대전하는 방법은 무엇인가요?</h3>
+                        <p class="text-gray-600">게임 내의 PvP 모드에 진입하여 다른 플레이어와 대전할 수 있습니다. 리그 시스템을 통해 순위를 올려가며, 높은 순위를 유지하면 특별한 보상을 받을 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다운로드 섹션 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">지금 게임을 다운로드하세요!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">포케헌트의 세계로 들어가서, 복고 픽셀 몬스터 수집육성 게임의 재미를 경험하세요!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-white text-primary px-8 py-3 rounded-lg font-bold text-lg btn-hover">게임 다운로드하기</a>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                        <h3 class="text-2xl font-bold">포케헌트</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">복고 픽셀 몬스터 수집육성 게임으로, 전통적인 몬스터 게임의 매력을 재현한 턴제 RPG 게임입니다.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white"><i class="fa fa-discord text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">빠른 링크</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">홈</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">게임 특색</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-white">게임 가이드</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">환전 코드</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">게임 소식</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">연락처</h3>
+                    <p class="text-gray-400 mb-2">QQ群: 1054734634</p>
+                    <div class="mt-4">
+                        <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二维码" class="w-32 h-32">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Pokehunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // 모바일 메뉴 토글
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

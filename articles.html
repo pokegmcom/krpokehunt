@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 소식 - 포케헌트 PokeHunt</title>
+    <meta name="description" content="포케헌트(PokeHunt) 게임 소식과 공지사항을 확인하세요. 최신 업데이트, 이벤트 정보, 개발 일지 등을 확인할 수 있습니다!">
+    <meta name="keywords" content="포케헌트, PokeHunt, 게임 소식, 공지사항, 업데이트, 이벤트, 개발 일지">
+    <meta name="author" content="Pokegm">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="게임 소식 - 포케헌트">
+    <meta property="og:description" content="포케헌트(PokeHunt) 게임 소식과 공지사항을 확인하세요. 최신 업데이트, 이벤트 정보, 개발 일지 등을 확인할 수 있습니다!">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://korea.pokegm.com/articles.html">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body class="bg-light text-dark">
+    <!-- 네비게이션 바 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                    <h1 class="text-2xl font-bold text-primary">포케헌트</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium">홈</a>
+                    <a href="features.html" class="text-gray-700 hover:text-primary font-medium">게임 특색</a>
+                    <a href="guide.html" class="text-gray-700 hover:text-primary font-medium">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium">환전 코드</a>
+                    <a href="articles.html" class="text-primary font-medium">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium btn-hover">게임 다운로드</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="navbar-toggle text-gray-700">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 모바일 메뉴 -->
+            <div class="navbar-menu hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 hover:text-primary font-medium py-2">홈</a>
+                    <a href="features.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 특색</a>
+                    <a href="guide.html" class="text-gray-700 hover:text-primary font-medium py-2">게임 가이드</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary font-medium py-2">환전 코드</a>
+                    <a href="articles.html" class="text-primary font-medium py-2">게임 소식</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium text-center btn-hover">게임 다운로드</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 영역 -->
+    <section class="hero-bg h-[60vh] flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">게임 소식</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">포케헌트의 최신 소식과 공지사항을 확인하세요</p>
+        </div>
+    </section>
+
+    <!-- 게시글 목록 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 게시글 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="1.jpg" alt="게임 출시 공지" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs font-medium px-2.5 py-0.5 rounded">공지</span>
+                            <span class="text-gray-500 text-sm">2026.01.20</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">게임 출시 공지</h3>
+                        <p class="text-gray-600 mb-4">《PokeHunt》가 2026년 1월 20일 오전 10시에 정식 출시됩니다! 클래식 포켓몬 게임으로, 수백 종의 포켓몬 원래 모습과 모험 핵심을 섬세하게 재현합니다!</p>
+                        <a href="articles/article1.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 게시글 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="2.jpg" alt="첫 번째 업데이트 안내" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-secondary/10 text-secondary text-xs font-medium px-2.5 py-0.5 rounded">업데이트</span>
+                            <span class="text-gray-500 text-sm">2026.01.25</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">첫 번째 업데이트 안내</h3>
+                        <p class="text-gray-600 mb-4">첫 번째 업데이트가 진행됩니다. 새로운 몬스터 추가, 도련장 확장, 새로운 이벤트 등을 준비했습니다. 업데이트 후 게임을 즐겨보세요!</p>
+                        <a href="articles/article2.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 게시글 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="3.jpg" alt="주간 이벤트 안내" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-medium px-2.5 py-0.5 rounded">이벤트</span>
+                            <span class="text-gray-500 text-sm">2026.01.28</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">주간 이벤트 안내</h3>
+                        <p class="text-gray-600 mb-4">주간 이벤트가 시작됩니다! 특별한 몬스터 출현 확률 증가, 보상 배율 업, 한정 아이템 제공 등 다양한 혜택을 준비했습니다. 이벤트期间 게임을 많이 플레이해 보세요!</p>
+                        <a href="articles/article3.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 게시글 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="4.jpg" alt="개발 일지" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">개발 일지</span>
+                            <span class="text-gray-500 text-sm">2026.02.01</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">개발 일지: 다음 업데이트 계획</h3>
+                        <p class="text-gray-600 mb-4">다음 업데이트에 대한 개발 계획을 공개합니다. 새로운 지역 추가, PvP 시스템 개선, 도련장 리더 재설계 등 다양한 내용을 준비 중입니다. 기대해 주세요!</p>
+                        <a href="articles/article4.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 게시글 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="5.jpg" alt="이벤트 결과 발표" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-secondary/10 text-secondary text-xs font-medium px-2.5 py-0.5 rounded">공지</span>
+                            <span class="text-gray-500 text-sm">2026.02.05</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">첫 번째 이벤트 결과 발표</h3>
+                        <p class="text-gray-600 mb-4">첫 번째 이벤트가圆满结束되었습니다. 이벤트期间 참여한 모든 플레이어에게 감사드리며, 특별한 보상을 지급합니다. 결과를 확인하세요!</p>
+                        <a href="articles/article5.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 게시글 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="1.jpg" alt="서버 안정화 작업 안내" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">서버</span>
+                            <span class="text-gray-500 text-sm">2026.02.10</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">서버 안정화 작업 안내</h3>
+                        <p class="text-gray-600 mb-4">서버 안정화 작업을 진행합니다. 작업期间 약 2시간 동안 접속이 불가능할 예정입니다. 작업이 끝나면 안내드리겠습니다. 양해 부탁드립니다.</p>
+                        <a href="articles/article6.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 페이지 네비게이션 -->
+            <div class="mt-12 flex justify-center">
+                <nav class="inline-flex rounded-md shadow">
+                    <a href="#" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-primary text-sm font-medium text-white">1</a>
+                    <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">2</a>
+                    <a href="#" class="px-3 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">3</a>
+                    <a href="#" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다운로드 섹션 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">지금 게임을 다운로드하세요!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">포케헌트의 세계로 들어가서, 복고 픽셀 몬스터 수집육성 게임의 재미를 경험하세요!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-white text-primary px-8 py-3 rounded-lg font-bold text-lg btn-hover">게임 다운로드하기</a>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                        <h3 class="text-2xl font-bold">포케헌트</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">복고 픽셀 몬스터 수집육성 게임으로, 전통적인 몬스터 게임의 매력을 재현한 턴제 RPG 게임입니다.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white"><i class="fa fa-discord text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">빠른 링크</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">홈</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">게임 특색</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-white">게임 가이드</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">환전 코드</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">게임 소식</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">연락처</h3>
+                    <p class="text-gray-400 mb-2">QQ群: 1054734634</p>
+                    <div class="mt-4">
+                        <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二维码" class="w-32 h-32">
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Pokehunt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // 모바일 메뉴 토글
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
