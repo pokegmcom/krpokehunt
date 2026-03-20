@@ -3,283 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>《포케헌트PokeHunt》공식 다운로드 - 복고 픽셀 몬스터 수집육성 게임</title>
-    <meta name="description" content="포케헌트(PokeHunt) - 복고 픽셀 화풍을 사용한 전통적인몬스터 수집육성 게임! 전통적인몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 플레이어는몬스터 트레이너로서 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한몬스터를 포획하며, 전용 전투 팀을 구성하여 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치며, 어릴 적의 열정적인 추억을 재생하세요!">
-    <meta name="keywords" content="포케헌트, PokeHunt, 복고 픽셀,몬스터 수집,육성 게임, 오픈 월드, 도련장, 전략 게임, 게임 가이드, 포케헌트 공식 홈페이지">
+    <title>PokeHunt 공식 웹사이트 - 복고 픽셀 몬스터 수집육성 게임 | 다운로드</title>
+    <meta name="description" content="포케헌트(PokeHunt) - 복고 픽셀 화풍의 몬스터 수집육성 게임! 수백 종의 몬스터를 포획하고 육성하여, 오픈 월드에서 모험을 즐기고 다른 트레이너들과 대전하세요. 클래식 RPG의 매력을 재현한 새로운 게임 경험!">
+    <meta name="keywords" content="포케헌트, PokeHunt, 복고 픽셀, 몬스터 수집, 육성 게임, 오픈 월드, 턴제 RPG, 게임 다운로드, 코리아 서버">
     <meta name="author" content="Pokegm">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="포케헌트 - 공식 홈페이지">
-    <meta property="og:description" content="포케헌트(PokeHunt) - 복고 픽셀 화풍을 사용한 전통적인몬스터 수집육성 게임! 전통적인몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 플레이어는몬스터 트레이너로서 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한몬스터를 포획하며, 전용 전투 팀을 구성하여 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치며, 어릴 적의 열정적인 추억을 재생하세요!">
+    <meta property="og:title" content="포케헌트 - 공식 웹사이트">
+    <meta property="og:description" content="포케헌트(PokeHunt) - 복고 픽셀 화풍의 몬스터 수집육성 게임!">
     <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://www.pokegm.com">
+    <meta property="og:url" content="https://korea.pokegm.com">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
     <link rel="icon" href="logo.png" type="image/png">
 </head>
-<body>
+<body class="bg-light text-dark">
     <!-- 네비게이션 바 -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <img src="logo.png" alt="포케헌트 로고" class="logo">
-                <h1>포케헌트</h1>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary flex items-center">
+                <img src="logo.png" alt="PokeHunt Logo" class="h-10 w-auto mr-2">
+                PokeHunt
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-primary font-medium">홈</a>
+                <a href="features.html" class="text-gray-700 hover:text-primary transition-colors">게임 특색</a>
+                <a href="guide.html" class="text-gray-700 hover:text-primary transition-colors">게임 가이드</a>
+                <a href="codes.html" class="text-gray-700 hover:text-primary transition-colors">환전 코드</a>
+                <a href="articles.html" class="text-gray-700 hover:text-primary transition-colors">게임 소식</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                    <i class="fa fa-download mr-2"></i>게임 다운로드
+                </a>
             </div>
-            <ul class="navbar-menu">
-                <li><a href="index.html">홈</a></li>
-                <li><a href="features.html">게임 특색</a></li>
-                <li><a href="guide.html">게임 가이드</a></li>
-                <li><a href="codes.html">환전 코드</a></li>
-                <li><a href="articles.html">게임 소식</a></li>
-                <li><a href="https://hk.qu06.cn/pokehunt/?xamro7z8">게임 다운로드</a></li>
-            </ul>
-            <div class="language-selector">
-                <button onclick="toggleLanguageDropdown()">
-                    <span>한국어</span>
-                    <span>▼</span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="https://game.pokegm.com">简体中文</a>
-                    <a href="https://taiwan.pokegm.com">繁體中文(台灣)</a>
-                    <a href="https://hongkong.pokegm.com">繁體中文(香港)</a>
-                    <a href="https://macau.pokegm.com">繁體中文(澳門)</a>
-                    <a href="https://korea.pokegm.com">한국어</a>
-                    <a href="https://singapore.pokegm.com">English</a>
-                    <a href="https://malaysia.pokegm.com">Malay</a>
-                    <a href="https://vietnam.pokegm.com">Tiếng Việt</a>
-                </div>
-            </div>
-            <button class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button id="mobile-menu-btn" class="md:hidden text-dark text-2xl">
+                <i class="fa fa-bars"></i>
             </button>
         </div>
-    </nav>
-
-    <!-- 메인 배너 (홈 섹션) -->
-    <section id="home" class="hero">
-        <div class="slideshow-container">
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>포케헌트 - 복고 픽셀몬스터 수집육성 게임!</h2>
-                    <p>전통적인 몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 복고 픽셀 화풍으로 돌아오는 기억 속의 매력!</p>
-                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn btn-primary">게임 다운로드하기</a>
-                </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-primary font-medium">홈</a>
+                <a href="features.html" class="block text-gray-700 hover:text-primary transition-colors">게임 특색</a>
+                <a href="guide.html" class="block text-gray-700 hover:text-primary transition-colors">게임 가이드</a>
+                <a href="codes.html" class="block text-gray-700 hover:text-primary transition-colors">환전 코드</a>
+                <a href="articles.html" class="block text-gray-700 hover:text-primary transition-colors">게임 소식</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block bg-primary text-white px-4 py-2 rounded-lg font-medium text-center">
+                    <i class="fa fa-download mr-2"></i>게임 다운로드
+                </a>
             </div>
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>오픈 월드에서의 탐험과 몬스터 수집!</h2>
-                    <p>넓은 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한 몬스터를 포획하세요!</p>
-                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn btn-primary">게임 다운로드하기</a>
-                </div>
-            </div>
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>도련장 리더와 레전드 트레이너 대결!</h2>
-                    <p>전용 전투 팀을 구성하여 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치세요!</p>
-                    <a href="guide.html" class="btn btn-primary">가이드 보기</a>
-                </div>
-            </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </section>
+    </header>
 
-    <!-- 다운로드 섹션 -->
-    <section id="download" class="download">
-        <div class="container">
-            <h2 class="section-title">게임 다운로드</h2>
-            <div class="download-content">
-                <div class="download-info">
-                    <p>포케헌트가 출시되었습니다! 지금 다운로드하고 복고 픽셀 몬스터 수집육성 게임의 세계로 들어가세요!</p>
-                    <p>지원 플랫폼: Android, iOS, PC, HarmonyOS</p>
-                    <p><strong>출시일: 2026년 1월</strong></p>
-                </div>
-                <div class="download-buttons">
-                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn btn-primary btn-large">모바일 버전 다운로드하기</a>
-                </div>
+    <!-- Hero 영역 -->
+    <section class="hero-bg h-[80vh] flex items-center justify-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">포케헌트</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">복고 픽셀 몬스터 수집육성 게임</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">수백 종의 몬스터를 포획하고 육성하여, 오픈 월드에서 모험을 즐기고 다른 트레이너들과 대전하세요!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg btn-hover">게임 다운로드</a>
+                <a href="features.html" class="bg-white/20 text-white border border-white px-8 py-4 rounded-lg font-bold text-lg btn-hover">게임 특색 보기</a>
             </div>
         </div>
     </section>
 
     <!-- 게임 소개 섹션 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">게임 소개</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>포케헌트는 복고 픽셀 화풍을 사용한 전통적인몬스터 수집육성 게임입니다. 전통적인몬스터 게임에 대한 찬사를 담은 턴제 RPG 게임으로, 전통적인몬스터 게임의 매력을 재현하면서도 새로운 오픈 월드 탐험 요소를 추가한 게임입니다.</p>
-                    <p>플레이어는몬스터 트레이너로서 오픈 월드에서 미지의 영역을 탐험하고, 수백 종의 독특한몬스터를 포획하며, 전용 전투 팀을 구성합니다. 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치며, 어릴 적의 열정적인 추억을 재생하세요!</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature">
-                        <h3>복고 픽셀 화풍</h3>
-                        <p>어릴 적의 추억을 불러오는 복고 스타일의 그래픽으로, 전통적인몬스터 게임의 매력을 재현합니다</p>
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">게임 소개</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary">포케헌트란?</h3>
+                    <p class="text-gray-600 mb-4">포케헌트는 복고 픽셀 화풍의 몬스터 수집육성 게임으로, 전통적인 몬스터 게임의 매력을 재현한 턴제 RPG입니다. 수백 종의 독특한 몬스터를 포획하고 육성하여, 전용 전투 팀을 구성하세요.</p>
+                    <p class="text-gray-600 mb-4">넓은 오픈 월드에서 미지의 영역을 탐험하고, 도련장 리더와 레전드 트레이너들과의 대결을 통해 최고의 트레이너가 되어보세요!</p>
+                    <div class="flex space-x-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>수백 종의 몬스터</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>오픈 월드 탐험</span>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <h3>수백 종의몬스터</h3>
-                        <p>다양한 타입의 독특한몬스터를 포획하고 수집하여, 전용 전투 팀을 구성하세요</p>
-                    </div>
-                    <div class="feature">
-                        <h3>턴제 전략 전투</h3>
-                        <p>전략적으로 팀을 구성하고, 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치세요</p>
-                    </div>
-                    <div class="feature">
-                        <h3>오픈 월드 탐험</h3>
-                        <p>넓은 오픈 월드에서 미지의 영역을 탐험하고, 숨겨진몬스터를 찾아보세요</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 게임 특색 이미지 슬라이드쇼 -->
-            <div class="about-slider">
-                <div class="slider-container">
-                    <div class="slider-slide fade">
-                        <img src="1.jpg" alt="게임 특색 이미지1" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="2.jpg" alt="게임 특색 이미지2" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="3.jpg" alt="게임 특색 이미지3" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="4.jpg" alt="게임 특색 이미지4" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="5.jpg" alt="게임 특색 이미지5" class="slider-image">
+                    <div class="flex space-x-4 mt-4">
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>턴제 전략 전투</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>다중 플레이어 대전</span>
+                        </div>
                     </div>
                 </div>
-                <!-- 제어 버튼 -->
-                <a class="slider-prev" onclick="plusFeatureSlides(-1)">&lt;</a>
-                <a class="slider-next" onclick="plusFeatureSlides(1)">&gt;</a>
-                <!-- 인디케이터 -->
-                <div class="slider-dots">
-                    <span class="slider-dot" onclick="currentFeatureSlide(1)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(2)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(3)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(4)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(5)"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 文章公告部分 -->
-    <section id="article" class="article">
-        <div class="container">
-            <div class="article-content">
-                <h2 class="section-title">게임 출시 공지</h2>
-                <div class="article-text">
-                    <p>친애하는 트레이너 여러분:</p>
-                    <p>《PokeHunt》가 2026년 1월 20일 오전 10시에 정식 출시됩니다! 클래식 포켓몬 게임으로, 수백 종의 포켓몬 원래 모습과 모험 핵심을 섬세하게 재현합니다! 게임에서 여러분은 다음을 경험할 수 있습니다:</p>
-                    <ul>
-                        <li>【원작 재현】클래식 포켓몬 모습을 100% 재현하여, 다양한 동료들을 모읍니다!</li>
-                        <li>【포켓몬 형태】MEGA 진화, 거대화를 통해 포켓몬의 모든 형태를 해방시킵니다!</li>
-                        <li>【비밀 보물 증폭】유대 장신구로 포켓몬의 잠재력을 활성화시킵니다!</li>
-                        <li>【탐험 모험】오픈 월드 맵 관문에서 숨겨진 비밀 지역을 발견하세요!</li>
-                        <li>【경기 대결】단인 대결에서 실력을 겨뤄 정상 순위를争夺하세요!</li>
-                    </ul>
-                    <p class="gift-title">선물 코드: 【서버 오픈 혜택】</p>
-                    <div class="gift-codes">
-                        <div class="gift-item">
-                            <div class="gift-number">선물 코드1</div>
-                            <div class="gift-code">ay6btcrx</div>
-                            <div class="gift-reward">크리스탈*50, 골드*1w</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">선물 코드2</div>
-                            <div class="gift-code">d7lsw8bu</div>
-                            <div class="gift-reward">마법 사탕(중급)*5, 골드*1w</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">선물 코드3</div>
-                            <div class="gift-code">1frydl8n</div>
-                            <div class="gift-reward">체력*50, 피로도*100</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">선물 코드4</div>
-                            <div class="gift-code">42binn3h</div>
-                            <div class="gift-reward">일반 카드 랜덤 패키지*10, 마법 사탕(중급)*5</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">선물 코드5</div>
-                            <div class="gift-code">y67gaamk</div>
-                            <div class="gift-reward">크리스탈*100, 골드*1w</div>
-                        </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="1.jpg" alt="게임 이미지 1" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="2.jpg" alt="게임 이미지 2" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="3.jpg" alt="게임 이미지 3" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="4.jpg" alt="게임 이미지 4" class="w-full h-48 object-cover">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 게임 가이드 섹션 -->
-    <section id="guide" class="guide">
-        <div class="container">
-            <h2 class="section-title">게임 가이드</h2>
-            <div class="guide-content">
-                <div class="guide-item">
-                    <h3>초보자 가이드</h3>
-                    <div class="guide-steps">
-                        <div class="step">
-                            <h4>1. 게임 다운로드하기</h4>
-                            <p>게임 다운로드를 완료하세요. 지금 바로 플레이할 수 있습니다.</p>
-                        </div>
-                        <div class="step">
-                            <h4>2. 첫몬스터 찾기</h4>
-                            <p>오픈 월드에서 탐험을 시작하고, 다양한 지역에서몬스터를 찾으세요. 화면에 나타나는몬스터를 터치하여 포획하세요.</p>
-                        </div>
-                        <div class="step">
-                            <h4>3.몬스터 키우기</h4>
-                            <p>포획한몬스터에 사료를 주고 경험치를 쌓아 진화시켜세요. 강력한몬스터로 성장하세요.</p>
-                        </div>
+    <!-- 게임 특색 섹션 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">게임 특색</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 특색 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paint-brush text-2xl text-primary"></i>
                     </div>
+                    <h3 class="text-2xl font-bold mb-4">복고 픽셀 화풍</h3>
+                    <p class="text-gray-600">어릴 적의 추억을 불러오는 복고 스타일의 그래픽으로, 전통적인 몬스터 게임의 매력을 재현합니다.</p>
                 </div>
-                <div class="guide-item">
-                    <h3>고급 전략</h3>
-                    <div class="guide-tips">
-                    <div class="tip">
-                        <h4>타입 상성 활용</h4>
-                        <p>각몬스터는 다른 타입에 대해 강점과 약점이 있습니다. 턴제 전투에서 상성을 적절히 활용하여 승리하세요.</p>
+                
+                <!-- 특색 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paw text-2xl text-secondary"></i>
                     </div>
-                    <div class="tip">
-                        <h4>스킬 조합</h4>
-                        <p>몬스터의 스킬을 적절히 조합하여 더 큰 데미지를 입히세요. 특수 스킬은 쿨다운 시간을 주의하세요.</p>
-                    </div>
-                    <div class="tip">
-                        <h4>팀 구성</h4>
-                        <p>다양한 타입의몬스터로 전용 팀을 구성하세요. 도련장 리더와 레전드 트레이너와의 대결에 적합한 팀을 준비하세요.</p>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">수백 종의 몬스터</h3>
+                    <p class="text-gray-600">다양한 타입의 독특한 몬스터를 포획하고 수집하여, 전용 전투 팀을 구성하세요.</p>
                 </div>
+                
+                <!-- 특색 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gamepad text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">턴제 전략 전투</h3>
+                    <p class="text-gray-600">전략적으로 팀을 구성하고, 도련장 리더와 레전드 트레이너들과의 흥미진진한 대결을 펼치세요.</p>
+                </div>
+                
+                <!-- 특색 4 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-map-o text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">오픈 월드 탐험</h3>
+                    <p class="text-gray-600">넓은 오픈 월드에서 미지의 영역을 탐험하고, 숨겨진 몬스터를 찾아보세요.</p>
+                </div>
+                
+                <!-- 특색 5 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">다중 플레이어 대전</h3>
+                    <p class="text-gray-600">다른 트레이너들과 실시간으로 대전하여, 최고의 트레이너가 되어보세요.</p>
+                </div>
+                
+                <!-- 특색 6 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-gift text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">다양한 보상 시스템</h3>
+                    <p class="text-gray-600">일일 미션, 주간 이벤트, 특별 이벤트 등을 통해 다양한 보상을 획득하세요.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 최신 환전 코드 섹션 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">최신 환전 코드</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- 코드 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">최신</span>
+                        <span class="text-gray-400 text-sm">2026-03-20</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">오픈 이벤트</h3>
+                    <p class="text-gray-600 mb-4">마법 캔디(중급) x50, 일반 카드 랜덤 박스 x20</p>
+                    <div class="flex items-center justify-between">
+                        <code class="bg-primary/10 text-primary px-3 py-2 rounded font-mono">vip666</code>
+                        <button onclick="copyCode('vip666')" class="text-primary hover:text-purple-600">
+                            <i class="fa fa-copy text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 코드 2 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-secondary text-white text-xs px-3 py-1 rounded-full">한정</span>
+                        <span class="text-gray-400 text-sm">2026-03-15</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">봄 이벤트</h3>
+                    <p class="text-gray-600 mb-4">크리스탈 x200, 봄 한정 카드 x1</p>
+                    <div class="flex items-center justify-between">
+                        <code class="bg-primary/10 text-primary px-3 py-2 rounded font-mono">spring2026</code>
+                        <button onclick="copyCode('spring2026')" class="text-primary hover:text-purple-600">
+                            <i class="fa fa-copy text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 코드 3 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-accent text-dark text-xs px-3 py-1 rounded-full">호화</span>
+                        <span class="text-gray-400 text-sm">2026-03-10</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">호화 패키지</h3>
+                    <p class="text-gray-600 mb-4">희귀 카드 x10, 골드 x100000, 속성석 x20</p>
+                    <div class="flex items-center justify-between">
+                        <code class="bg-primary/10 text-primary px-3 py-2 rounded font-mono">luxury2026</code>
+                        <button onclick="copyCode('luxury2026')" class="text-primary hover:text-purple-600">
+                            <i class="fa fa-copy text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="codes.html" class="text-primary font-medium hover:underline">모든 환전 코드 보기 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 최신 게임 소식 섹션 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">최신 게임 소식</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 소식 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="1.jpg" alt="게임 출시 공지" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs font-medium px-2.5 py-0.5 rounded">공지</span>
+                            <span class="text-gray-500 text-sm">2026.01.20</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">게임 출시 공지</h3>
+                        <p class="text-gray-600 mb-4">《PokeHunt》가 2026년 1월 20일 오전 10시에 정식 출시됩니다! 클래식 포켓몬 게임으로, 수백 종의 포켓몬 원래 모습과 모험 핵심을 섬세하게 재현합니다!</p>
+                        <a href="articles/article1.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 소식 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="2.jpg" alt="첫 번째 업데이트 안내" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-secondary/10 text-secondary text-xs font-medium px-2.5 py-0.5 rounded">업데이트</span>
+                            <span class="text-gray-500 text-sm">2026.01.25</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">첫 번째 업데이트 안내</h3>
+                        <p class="text-gray-600 mb-4">첫 번째 업데이트가 진행됩니다. 새로운 몬스터 추가, 도련장 확장, 새로운 이벤트 등을 준비했습니다. 업데이트 후 게임을 즐겨보세요!</p>
+                        <a href="articles/article2.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 소식 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="3.jpg" alt="주간 이벤트 안내" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs font-medium px-2.5 py-0.5 rounded">이벤트</span>
+                            <span class="text-gray-500 text-sm">2026.01.28</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">주간 이벤트 안내</h3>
+                        <p class="text-gray-600 mb-4">주간 이벤트가 시작됩니다! 특별한 몬스터 출현 확률 증가, 보상 배율 업, 한정 아이템 제공 등 다양한 혜택을 준비했습니다. 이벤트期间 게임을 많이 플레이해 보세요!</p>
+                        <a href="articles/article3.html" class="text-primary font-medium hover:underline flex items-center">
+                            자세히 보기 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="articles.html" class="text-primary font-medium hover:underline">모든 게임 소식 보기 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다운로드 섹션 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">지금 게임을 다운로드하세요!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">포케헌트의 세계로 들어가서, 복고 픽셀 몬스터 수집육성 게임의 재미를 경험하세요!</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg btn-hover">게임 다운로드하기</a>
         </div>
     </section>
 
     <!-- 푸터 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="friend-links">
-                    <span>친구 링크: </span>
-                    <a href="https://game.pokegm.com">像素精灵</a>
-                    <a href="https://taiwan.pokegm.com">像素精靈</a>
-                    <a href="https://hongkong.pokegm.com">像素精靈</a>
-                    <a href="https://macau.pokegm.com">像素精灵</a>
-                    <a href="https://korea.pokegm.com">포케헌트</a>
-                    <a href="https://singapore.pokegm.com">Pixel Sprite</a>
-                    <a href="https://malaysia.pokegm.com">Pixsel Sprite</a>
-                    <a href="https://vietnam.pokegm.com">Tinh linh pixsel</a>
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logo.png" alt="포케헌트 로고" class="h-10 w-auto">
+                        <h3 class="text-2xl font-bold">포케헌트</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">복고 픽셀 몬스터 수집육성 게임으로, 전통적인 몬스터 게임의 매력을 재현한 턴제 RPG 게임입니다.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white"><i class="fa fa-discord text-xl"></i></a>
+                    </div>
                 </div>
-                <div class="footer-contact">
-                    <p>Discord: <a href="https://discord.gg/Pvkxz96V" style="color: rgba(255,255,255,0.9); text-decoration: underline;">https://discord.gg/Pvkxz96V</a></p>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">빠른 링크</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">홈</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">게임 특색</a></li>
+                        <li><a href="guide.html" class="text-gray-400 hover:text-white">게임 가이드</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">환전 코드</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">게임 소식</a></li>
+                    </ul>
                 </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">연락처</h3>
+                    <p class="text-gray-400 mb-2">Discord: <a href="https://discord.gg/Pvkxz96V" class="text-white hover:underline">https://discord.gg/Pvkxz96V</a></p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2026 Pokehunt. All rights reserved.</p>
             </div>
         </div>
@@ -287,93 +387,22 @@
 
     <!-- 자바스크립트 -->
     <script>
-        // 상단 메인 슬라이드쇼
-        let slideIndex = 1;
-        showHeroSlides(slideIndex);
-
-        function plusSlides(n) {
-            showHeroSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showHeroSlides(slideIndex = n);
-        }
-
-        // 상단 메인 슬라이드쇼 제어
-        function showHeroSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-        
-        // 게임 특색 슬라이드쇼 제어
-        let featureSlideIndex = 1;
-        showFeatureSlides(featureSlideIndex);
-        
-        function plusFeatureSlides(n) {
-            showFeatureSlides(featureSlideIndex += n);
-        }
-        
-        function currentFeatureSlide(n) {
-            showFeatureSlides(featureSlideIndex = n);
-        }
-        
-        function showFeatureSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slider-slide");
-            let dots = document.getElementsByClassName("slider-dot");
-            if (n > slides.length) {featureSlideIndex = 1}
-            if (n < 1) {featureSlideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[featureSlideIndex-1].style.display = "block";
-            dots[featureSlideIndex-1].className += " active";
-        }
-
-        // 자동 슬라이드
-        // 상단 메인 슬라이드쇼 자동 전환
-        setInterval(() => {
-            plusSlides(1);
-        }, 5000);
-        
-        // 게임 특색 슬라이드쇼 자동 전환
-        setInterval(() => {
-            plusFeatureSlides(1);
-        }, 4000);
-
         // 모바일 메뉴 토글
-        const navbarToggle = document.querySelector('.navbar-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        navbarToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
 
-        // 언어 선택기 드롭다운 기능
-        function toggleLanguageDropdown() {
-            document.querySelector('.language-selector').classList.toggle('active');
+        // 코드 복사 기능
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert('환전 코드 ' + code + ' 가 복사되었습니다!');
+            }).catch(err => {
+                console.error('복사 실패:', err);
+            });
         }
-
-        // 외부 클릭 시 드롭다운 메뉴 닫기
-        window.addEventListener('click', function(event) {
-            if (!event.target.closest('.language-selector')) {
-                document.querySelector('.language-selector').classList.remove('active');
-            }
-        });
     </script>
 </body>
 </html>
